@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        /* Basic styling for the navbar */
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700;
+            /* Change color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+<section id="about">
+    <h2>About</h2>
+    <p>This is the about section. You can provide information about yourself or your company here.</p>
+</section>
+
+<section id="work">
+    <h2>Work</h2>
+    <p>This is the work section where you can showcase your projects or professional experience.</p>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+    <p>This is the resume section. You can provide a summary of your skills, education, and work experience here.</p>
+    <!-- You can provide a link to download your resume -->
+    <a href="link-to-your-resume.pdf" download>Download Resume</a>
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me using the form below:</p>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
+
+
+</html>
